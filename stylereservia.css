@@ -2,14 +2,7 @@
 body {
   font-family: "Raleway", "Sans serif";
   margin-right: 20px;
-  background-color: transparent;
-
-  
-}
-main
-{
-padding: 20px;
-display: block;
+  background-color: transparent; 
 }
 header
 {
@@ -60,4 +53,9 @@ a:hover
   border-top: 3px solid #0065FC;
   padding: 25px;
 
+}
+main
+{
+padding: 20px;
+display: block;
 }
