@@ -2,218 +2,319 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, , initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="stylereservia.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 		<title>Reservia</title>
 	</head>
 	<body>
+
 		<!--en-tete-->
 		<header>
 			<div id="titre-logo">
 				<img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/Reservia@3x.png" alt="titre-logo" />
 			</div>
-			<nav>
-				<ul>
-					<li><a href="#hébèrgements-ville-marseille">Hébèrgements</a></li>
-					<li><a href="#les-activités-ville-marseille">Activités</a></li>
-					<li><a href="#">S'inscrire</a></li>
-				</ul>
+			<nav class="barre-nav">
+				<a class="nav-hébèrgement" href="#hébèrgements-ville-marseille">Hébèrgements</a>
+				<a class="nav-activité" href="#les-activités-ville-marseille">Activités</a>
+				<a class="nav-inscription" href="#">S'inscrire</a>	
 			</nav>
 		</header>
 		<!--en-tete-->
+
 		<!--contenu de page-->
 		<main class="contenu de page">
+			<!--section-recherches-->
 			<section class="recherche-choix">
 				<div class="recherche-titre">
 					<h1 class="titre d'en-tete">Trouver votre hébèrgement pour des vacances de rêve</h1>
-					<p class="sous-titre d'en-tete">
+					<p class="sous-titre-en-tete">
 						En plein centre ville ou en pleine nature
 					</p>
 				</div>
-				<form method="post" action="traitement.php">
-					<p>
-						<label for="rechercher">rechercher :</label>
-						<input type="search" name="rechercher" id="rechercher" placeholder="Marseille, France" />
-					</p>
+				<form class="recherche-form" action="traitement.php">
+					<span class="recherche-form-icone">
+						<i class="fas fa-map-marker-alt"></i>
+					</span>
+					<input class="recherche-form-input" type="search" placeholder="Marseille, France" size="1">
+					  <button class="recherche-form-input-envoyer">
+						<span class="texte-rechercher">Rechercher</span>
+						<i class="icone-loupe fas fa-search"></i>
+					  </button>
 				</form>
 				<div class="filtres-recherche">
 					<h2 class="titre-filtres-recherche">Filtres</h2>
 					<div class="filtres-recherche-cat">
-						<div class="riltres-recherche-icon">
+						<div class="filtres-recherche-icon">
 							<i class="fas fa-money-bill-wave"></i>
 						</div>
 						<span class="titre-filtres-recherche-cat">Économique</span>
 					</div>
-				</div>
-				<div class="filtres-recherche">
-					<div class="riltres-recherche-icon">
-						<i class="fas fa-child"></i>
-					</div>
+					<div class="filtres-recherche-cat">
+						<div class="filtres-recherche-icon">
+							<i class="fas fa-child"></i>
+						</div>
 					<span class="titre-filtres-recherche-cat">Familial</span>
-				</div>
-				<div class="filtres-recherche">
-					<div class="riltres-recherche-icon">
-						<i class="fas fa-heart"></i>
 					</div>
+					<div class="filtres-recherche-cat">
+						<div class="filtres-recherche-icon">
+							<i class="fas fa-heart"></i>
+						</div>
 					<span class="titre-filtres-recherche-cat">Romantique</span>
-				</div>
-				<div class="filtres-recherche">
-					<div class="riltres-recherche-icon">
-						<i class="fas fa-dog"></i>
 					</div>
+					<div class="filtres-recherche-cat">
+						<div class="filtres-recherche-icon">
+							<i class="fas fa-dog"></i>
+						</div>
 					<span class="titre-filtres-recherche-cat">Animaux autorisés</span>
+					</div>
 				</div>
-				<div class="logo-info-icon">
-					<i class="fas fa-info-circle"></i>
-				</div>
-				<p class="resultat-recherche-texte">
+				<div class="nombre-resultat-recherche">
+					<div class="resultat-recherche-icone">
+						<i class="fas fa-info icone-info"></i>
+					</div>
+					<p class="resultat-recherche-texte">
 					Plus de 500 logements sont disponible dans cette ville
-				</p>
+					</p>
+				</div>
+			<!--section-recherches-->
+
+			<!--section-hébèrgements-->
 			</section>
-			<section class="hébèrgement-populaire">
-				<h2 id="hébèrgements-ville-marseille">Hébèrgements à Marseille</h2>
-				<figure class="Auberge-la-cannebière">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/marcus-loke-WQJvWU_HZFo-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/marcus-loke-WQJvWU_HZFo-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-					<figcaption>
-						<strong>Auberge la cannebière</strong>
-						<br />
-						Nuit à partir de 25€
-					</figcaption>
-				</figure>
-				<figure class="hôtel-du-port">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/fred-kleber-gTbaxaVLvsg-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/fred-kleber-gTbaxaVLvsg-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-					<figcaption>
-						<strong>Hôtel du port</strong>
-						<br />
-						Nuit à partir de 52€
-					</figcaption>
-				</figure>
-				<figure class="hôtel-les-mouettes">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/reisetopia-B8WIgxA_PFU-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/reisetopia-B8WIgxA_PFU-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-					<figcaption>
-						<strong>Hôtel les mouettes</strong>
-						<br />
-						Nuit à partir de 76€
-					</figcaption>
-				</figure>
-				<figure class="hôtel-de-la-mer">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/annie-spratt-Eg1qcIitAuA-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/annie-spratt-Eg1qcIitAuA-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-					<figcaption>
-						<strong>Hôtel de la mer</strong>
-						<br />
-						Nuit à partir de 46€
-					</figcaption>
-				</figure>
-				<figure class="Auberge-le-panier">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/nicate-lee-kT-ZyaiwBe0-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-					<figcaption>
-						<strong>Auberge le panier</strong>
-						<br />
-						Nuit à partir de 23€
-					</figcaption>
-				</figure>
-				<figure class="hôtel-chez-amina">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/febrian-zakaria-M6S1WvfW68A-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-					<figcaption>
-						<strong>Hôtel chez Amina</strong>
-						<br />
-						Nuit à partir de 96€
-					</figcaption>
-				</figure>
-				<a href="afficherplus">Afficher plus</a>
-				<aside>
-					<h2 class="hébèrgements-les-plus-populaires">Les plus populaires</h2>
-					<figure class="Hôtel-le-soleil-du-matin">
-						<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/emile-guillemot-Bj_rcSC5XfE-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-						<figcaption>
-							<strong>Hôtel le soleil du matin</strong>
-							<br />
-							Nuit à partir de 128€
-						</figcaption>
-					</figure>
-					<figure class="chambres-d'hôtes">
-						<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/aw-creative-VGs8z60yT2c-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/aw-creative-VGs8z60yT2c-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-						<figcaption>
-							<strong>Chambres d'hôtes</strong>
-							<br />
-							Nuit à partir de 71€
-						</figcaption>
-					</figure>
-					<figure class="Hôtel tout bleu et blanc">
-						<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-hébèrgement/febrian-zakaria-sjvU0THccQA-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/febrian-zakaria-sjvU0THccQA-unsplash-mini.jpg" alt="photo de l'hébèrgement" /></a>
-						<figcaption>
-							<strong>Hôtel tout bleu et blanc</strong>
-							<br />
-							Nuit à partir de 68€
-						</figcaption>
-					</figure>
-				</aside>
+			<section class="hébèrgements-ville-marseille" id="hébèrgements-ville-marseille">
+				<h2 class="hébèrgements-principal-titre">Hébèrgements à Marseille</h2>
+				<article class="carte-hébèrgement-principl">
+					<a href="#">
+						<figure class="figure-carte-hébèrgement-principal">
+							<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/marcus-loke-WQJvWU_HZFo-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement">
+							<figcaption class="figcaption-carte-hébèrgement-principal">
+								<h3 class="titre-figcaption-carte-hébèrgement-principal">Auberge de la cannebière</h3>
+							</figcaption>
+						</figure>
+						<p class="carte-hébèrgement-principl-description">Nuit à partir de <strong class="carte-hébèrgement-principl-prix">25€</strong></p>
+						<div class="carte-hébèrgement-principal-note">
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="false"></i>
+						</div>
+					</a>
+				</article>
+				<article class="carte-hébèrgement-principl">
+					<a href="#">
+						<figure class="figure-carte-hébèrgement-principal">
+							<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/fred-kleber-gTbaxaVLvsg-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement">
+							<figcaption class="figcaption-carte-hébèrgement-principal">
+								<h3 class="titre-figcaption-carte-hébèrgement-principal">Hôtel du port</h3>
+							</figcaption>
+						</figure>
+						<p class="carte-hébèrgement-principl-description">Nuit à partir de <strong class="carte-hébèrgement-principl-prix">52€</strong></p>
+						<div class="carte-hébèrgement-principal-note">
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+						</div>
+					</a>
+				</article>
+				<article class="carte-hébèrgement-principl">
+					<a href="#">
+						<figure class="figure-carte-hébèrgement-principal">
+							<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/reisetopia-B8WIgxA_PFU-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement">
+							<figcaption class="figcaption-carte-hébèrgement-principal">
+								<h3 class="titre-figcaption-carte-hébèrgement-principal">Hôtel les mouettes</h3>
+							</figcaption>
+						</figure>
+						<p class="carte-hébèrgement-principl-description">Nuit à partir de <strong class="carte-hébèrgement-principl-prix">76€</strong></p>
+						<div class="carte-hébèrgement-principal-note">
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+						</div>
+					</a>
+				</article>
+				<article class="carte-hébèrgement-principl">
+					<a href="#">
+						<figure class="figure-carte-hébèrgement-principal">
+							<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/annie-spratt-Eg1qcIitAuA-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement">
+							<figcaption class="figcaption-carte-hébèrgement-principal">	
+								<h3 class="titre-figcaption-carte-hébèrgement-principal">Hôtel de la mer</h3>
+							</figcaption>
+						</figure>
+						<p class="carte-hébèrgement-principl-description">Nuit à partir de <strong class="carte-hébèrgement-principl-prix">46€</strong></p>
+						<div class="carte-hébèrgement-principal-note">
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="false"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="false"></i>
+						</div>
+					</a>
+				</article>
+				<article class="carte-hébèrgement-principl">
+					<a href="#">
+						<figure class="figure-carte-hébèrgement-principal">
+							<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/nicate-lee-kT-ZyaiwBe0-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement">
+							<figcaption class="figcaption-carte-hébèrgement-principal">
+								<h3 class="titre-figcaption-carte-hébèrgement-principal">Auberge le panier</h3>
+							</figcaption>
+						</figure>
+						<p class="carte-hébèrgement-principl-description">Nuit à partir de <strong class="carte-hébèrgement-principl-prix">23€</strong></p>
+						<div class="carte-hébèrgement-principal-note">
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="false"></i>
+						</div>
+					</a>
+				</article>
+				<article class="carte-hébèrgement-principl">
+					<a href="#">
+						<figure class="figure-carte-hébèrgement-principal">
+							<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/nicate-lee-kT-ZyaiwBe0-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement">
+							<figcaption class="figcaption-carte-hébèrgement-principal">
+								<h3 class="titre-figcaption-carte-hébèrgement-principal">Hôtel chez Amina</h3>
+							</figcaption>
+						</figure>
+						<p class="carte-hébèrgement-principl-description">Nuit à partir de <strong class="carte-hébèrgement-principl-prix">96€</strong></p>
+						<div class="carte-hébèrgement-principal-note">
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+						</div>
+					</a>
+				</article>
+				<a class="hébèrgements-principals-montrer-plus" href="#">Afficher plus</a>
+				<aside class="hébèrgements-populaire-marseille">
+					<h2 class="titre-hébèrgements-populaires">Les plus populaires<i class="fas fa-chart-line"></i></h2>
+					<article class="carte-hébèrgement-populaire">
+						<a class="contenu-hébèrgement-populaire" href="#">
+							<figure class="figure-carte-hébèrgement-populaire">
+								<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/emile-guillemot-Bj_rcSC5XfE-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement" />
+								<figcaption class="figcaption-carte-hébèrgement-populaire">
+									<h3 class="titre-figcaption-carte-hébèrgement-principal">Hôtel le soleil du matin></h3>
+								</figcaption>
+							</figure>
+							<p class="carte-hébèrgement-populaire-description">Nuit à partir de <strong class="carte-hébèrgement-populaire-prix">128€</strong></p>
+							<div class="hébèrgements-populaire-note">
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+							</div>
+						</a>
+					</article>
+					<article class="carte-hébèrgement-populaire">
+						<a class="contenu-hébèrgement-populaire" href="#">
+							<figure class="figure-carte-hébèrgement-populaire">
+								<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/aw-creative-VGs8z60yT2c-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement" />
+								<figcaption class="figcaption-carte-hébèrgement-populaire">
+									<h3 class="titre-figcaption-carte-hébèrgement-principal">Chambres d'hôtes</h3>
+								</figcaption>
+							</figure>
+							<p class="carte-hébèrgement-populaire-description">Nuit à partir de <strong class="carte-hébèrgement-populaire-prix">71€</strong></p>
+							<div class="hébèrgements-populaire-note">
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="false"></i>
+							</div>
+						</a>
+					</article>
+					<article class="carte-hébèrgement-populaire">
+						<a class="contenu-hébèrgement-populaire" href="#">
+							<figure class="figure-carte-hébèrgement-populaire">
+								<img class="figure-carte-hébèrgement-principal-photo" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-hébèrgement/febrian-zakaria-sjvU0THccQA-unsplash-mini.jpg" alt="photo de la chambre d'hébèrgement" />
+								<figcaption class="figcaption-carte-hébèrgement-populaire">
+									<h3 class="titre-figcaption-carte-hébèrgement-principal">Hôtel tout bleu et blanc</h3>
+								</figcaption>
+							</figure>
+							<p class="carte-hébèrgement-populaire-description">Nuit à partir de <strong class="carte-hébèrgement-populaire-prix">68€</strong></p>
+							<div class="hébèrgements-populaire-note">
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="true"></i>
+								<i class="fas fa-star carte-hébèrgement-principal-note" data-active="false"></i>
+							</div>
+						</a>
+					</article>
+				</aside>	
 			</section>
-			<section class="activités">
-				<h2 id="les-activités-ville-marseille">Activités à Marseille</h2>
-				<figure class="vieux-port">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-activités/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/reno-laithienne-QUgJhdY5Fyk-unsplash-mini.jpg" alt="photo de l'activité" /></a>
-					<figcaption>
-						<strong>Vieux port</strong>
-					</figcaption>
-				</figure>
-				<figure class="pomègues">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-activités/paul-hermann-QFTrLdQIRhI-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/paul-hermann-QFTrLdQIRhI-unsplash-mini.jpg" alt="photo de l'activité" /></a>
-					<figcaption>
-						<strong>Fort de pomègues</strong>
-					</figcaption>
-				</figure>
-				<figure class="frioul">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-activités/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/kevin-hikari-rV_Qd1l-VXg-unsplash-mini.jpg" alt="photo de l'activité" /></a>
-					<figcaption>
-						<strong>Îles du frioul</strong>
-					</figcaption>
-				</figure>
-				<figure class="parc-nationnal">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-activités/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/kilyan-sockalingum-NR8-cBCN3aI-unsplash-mini.jpg" alt="photo de l'activité" /></a>
-					<figcaption>
-						<strong>Parc nationnal des calanques</strong>
-					</figcaption>
-				</figure>
-				<figure class="notre-dame">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-activités/florian-wehde-xW9e8gdotxI-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/florian-wehde-xW9e8gdotxI-unsplash-mini.jpg" alt="photo de l'activité" /></a>
-					<figcaption>
-						<strong>Notre-dame-de-la-garde</strong>
-					</figcaption>
-				</figure>
-				<figure class="longchamp">
-					<a href="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/grande-photo-activités/lena-paulin-wH2-EJoDcV0-unsplash.jpg"><img src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/lena-paulin-wH2-EJoDcV0-unsplash-mini.jpg" alt="photo de l'activité" /></a>
-					<figcaption>
-						<strong>Parc de longchamp</strong>
-					</figcaption>
-				</figure>
+			<!--section-hébèrgements-->	
+
+			<!--section-activités-->
+			<section class="les-activités-ville-marseille" id="les-activités-ville-marseille">
+				<h2 class="titre-activités-marseille">Activités à Marseille</h2>
+				<a class="carte-activités" href="#">
+					<div class="contenu-carte-activités">
+						<img class="image-contenu-carte-activités" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/reno-laithienne-QUgJhdY5Fyk-unsplash-mini.jpg" alt="port de plaisanceavec vue sur la ville" />
+					</div>
+					<h3 class="titre-carte-d'activités">Vieux Port</h3>
+				</a>
+				<a class="carte-activités" href="#">
+					<div class="contenu-carte-activités">
+						<img class="image-contenu-carte-activités" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/paul-hermann-QFTrLdQIRhI-unsplash-mini.jpg" alt="un ancien fort dans un endroit rocailleux" />
+					</div>
+					<h3 class="titre-carte-d'activités">Fort de pomègues</h3>
+				</a>
+				<a class="carte-activités" href="#">
+					<div class="contenu-carte-activités">
+						<img class="image-contenu-carte-activités" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/kilyan-sockalingum-NR8-cBCN3aI-unsplash-mini.jpg" alt="vue d'une petite montagne rocheuse et verte sur la mer" />
+					</div>
+					<h3 class="titre-carte-d'activités">Parc National des Calanques</h3>
+				</a>
+				<a class="carte-activités" href="#">
+					<div class="contenu-carte-activités">
+						<img class="image-contenu-carte-activités" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/florian-wehde-xW9e8gdotxI-unsplash-mini.jpg" alt="grande vue sur une ville avec un edifice sur le sommet d'une petite montagne" />
+					</div>
+					<h3 class="titre-carte-d'activités">Notre-Dame-de-la-Garde</h3>
+				</a>
+				<a class="carte-activités" href="#">
+					<div class="contenu-carte-activités">
+						<img class="image-contenu-carte-activités" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/kevin-hikari-rV_Qd1l-VXg-unsplash-mini.jpg" alt="vue d'une corniche sur petite île en mer" />
+					</div>
+					<h3 class="titre-carte-d'activités">Île du Frioul</h3>
+				</a>
+				<a class="carte-activités" href="#">
+					<div class="contenu-carte-activités">
+						<img class="image-contenu-carte-activités" src="/Users/linabelkaaloul/ProjetOpenclassrooms/formation/PROJET-2/projet-reservia/images/mini-photo-activités/lena-paulin-wH2-EJoDcV0-unsplash-mini.jpg" alt="une belle fontaine devant un batiment en pierre avec une belle architecture" />
+					</div>
+					<h3 class="titre-carte-d'activités">Parc Longchamp</h3>
+				</a>
 			</section>
+			<!--section-activités-->
 		</main>
 		<!--contenu de page-->
+
 		<!--pied de page-->
 		<footer>
-			<div id="A-propos">
-				<h3 class="a-propos-du-site">A propos</h3>
-				<ul>
-					<li><a href="#">Fonctionnement du site</a></li>
-					<li><a href="#">Conditions générales de vente</a></li>
-					<li><a href="#">Données et confidentialité</a></li>
-				</ul>
-			</div>
-			<div id="nos-hébèrgements">
-				<h3 class="charte-et-hôtels">Nos hébèrgements</h3>
-				<ul>
-					<li><a href="#">Charte qualité</a></li>
-					<li><a href="#">Soumettre votre hotel</a></li>
-				</ul>
-			</div>
-			<div id="assistance">
-				<h3 class="aide-et-contact">Assistance</h3>
-				<ul>
-					<li><a href="#">Centre d'aide</a></li>
-					<li><a href="#">Nous contacter</a></li>
-				</ul>
+			<div class="contenu-pied-de-page">
+				<div class="colonne-contenu-pied-de-page">
+					<h3 class="titre-olonne-contenu-pied-de-page">A propos</h3>
+					<a href="#" class="rubrique-colonne-contenu-pied-de-page">Fonctionnement du site</a>
+					<a href="#" class="rubrique-colonne-contenu-pied-de-page">Conditions générales de vente</a>
+					<a href="#" class="rubrique-colonne-contenu-pied-de-page">Données et confidentialité</a>
+				</div>
+				<div class="colonne-contenu-pied-de-page">
+					<h3 class="titre-olonne-contenu-pied-de-page">Nos hébèrgements</h3>
+					<a href="#" class="rubrique-colonne-contenu-pied-de-page">Charte qualité</a>
+					<a href="#" class="rubrique-colonne-contenu-pied-de-page">Soumettre votre hotel</a>
+				</div>
+				<div class="colonne-contenu-pied-de-page">
+					<h3 class="titre-olonne-contenu-pied-de-page">Assistance</h3>
+					<a href="#" class="rubrique-colonne-contenu-pied-de-page">Centre d'aide</a>
+					<a href="#" class="rubrique-colonne-contenu-pied-de-page">Nous contacter</a>
+				</div>
 			</div>
 		</footer>
 		<!--pied de page-->
