@@ -38,19 +38,7 @@ header
 .lien-nav:hover 
 {
   color: #0065FC;
-}
-@media screen and (min-width: 769px)
-{
-.lien-nav:hover
-{
   border-top: 3px solid #0065FC;
-}
-}
-@media screen and (max-width: 768px)
-{
-.lien-nav:hover
-{
-  border-top: none;
 }
 .nav-inscription
 {
@@ -72,9 +60,9 @@ a:hover
 }
 main
 {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 2.5rem;
 }
 h1
 {
@@ -101,7 +89,23 @@ h1
   border-radius: 0 1rem 1rem 0;
   padding: 0 1.5rem 0 1.5rem;
   font-size: 1rem;
-  
+}
+.texte-rechercher 
+{
+  display: block;
+}
+.icone-loupe
+{
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+  display: none !important;
 }
 .recherche-form-input
 {
@@ -158,6 +162,15 @@ h1
 {
   background-color: #f3f8fffc;
 }
+.filtres-recherche-icon
+{
+  background-color: #DEEBFF;
+  border-radius: 100%;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  justify-content: center; 
+}
 .titre-filtres-recherche-cat
 {
   display: flex;
@@ -168,66 +181,6 @@ h1
   font-weight: bold;
   margin: 0 1rem;
   margin: 0 0.7rem;
-}
-.filtres-recherche-icon
-{
-  background-color: #DEEBFF;
-  border-radius: 100%;
-  min-height: 3.5rem;
-  min-width: 3.5rem;
-  display: flex;
-  justify-content: center; 
-}
-.icone-loupe
-{
-  background-color: #0065FC;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 0 1rem 1rem 0;
-  padding: 0;
-  font-family: "Raleway", "Sans serif";
-  font-size: 1rem;
-  cursor: pointer;
-}
-@media screen and (max-width: 600px) {
-  .recherche-form {
-  display: flex;
-   width: 100%;
-  }
-  .recherche-form-input {
-    flex: 1;
-  }
-  .texte-rechercher {
-    display: none;
-  }
-  .icone-loupe {
-    display: block;
-  }
-}
-@media screen and (max-width: 650px) {
-  .titre-filtres-recherche{
-    width: 100%;
-  }
-  .filtres-recherche-cat {
-    margin-right: 1rem;
-  }
-}
-@media screen and (min-width: 601px) {
-  .texte-rechercher {
-    display: block;
-}
-.icone-loupe   
-{
-color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 0 1rem 1rem 0;
-  font-family: "Raleway", "Sans serif";
-  font-size: 1rem;
-  cursor: pointer;
-  display: none !important;
-}
 }
 .nombre-resultat-recherche
 {
@@ -246,12 +199,26 @@ color: white;
   justify-content: center;
   margin-right: 12px;
 }
+
+.hébèrgements-ville-marseille
+{
+  display: flex;
+  align-items: space-between;
+}
+.hébèrgements-principaux-ville-marseille
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+  background-color: #F2F2F2;
+  border-radius: 1.4rem;
+  padding: 2rem;
+}
 .hébèrgements-principal-titre
 {
   margin: 0;
-}
-.hébèrgements-principal-titre 
-{
+  padding: 0.6rem;
   grid-column: 1/-1;
 }
 .carte-hébèrgement-principal
@@ -264,6 +231,10 @@ color: white;
   box-sizing: border-box;
   height: 100%;
 }
+.figure-carte-hébèrgement-principal
+{
+  margin: 0;
+}
 .figure-carte-hébèrgement-principal-photo
 {
   height: 7.5rem;
@@ -273,29 +244,15 @@ color: white;
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
 }
-.figure-carte-hébèrgement-principal
+.titre-figcaption-carte-hébèrgement-principal
 {
-  margin: 0;
-}
-.hébèrgements-principaux-ville-marseille
-{
-  display: grid;
-  column-gap: 2rem;
-  row-gap: 2rem;
-  background-color: #F2F2F2;
-  border-radius: 1.4rem;
-  padding: 2rem;
-}
-.hébèrgements-principal-titre
-{
-
-padding: 0.6rem;
+  margin: 0.25rem 0 0 1rem;
 }
 .carte-hébèrgement-principal-description
 {
   margin: 0.25rem 0 0 1rem;
 }
-.titre-figcaption-carte-hébèrgement-principal
+.carte-hébèrgement-principal-note-générale
 {
   margin: 0.25rem 0 0 1rem;
 }
@@ -309,13 +266,17 @@ padding: 0.6rem;
   color: #d9d9d9d1;
   padding: 0;
 }
-.carte-hébèrgement-principal-note-générale
+.hébèrgements-principals-montrer-plus
 {
-  margin: 0.25rem 0 0 1rem;
+  font-weight: bold;
+  padding-left: 0.6rem;
 }
 .hébèrgements-populaire-marseille
 {
   display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto repeat(3, 9rem);
+  margin-left: 2.5rem;
   row-gap: 2rem;
   column-gap: 2rem;
   align-items: start;
@@ -326,6 +287,7 @@ padding: 0.6rem;
 }
 .titre-hébèrgements-populaires
 {
+  grid-column: 1/-1;
   display: flex;
   justify-content: space-between;
 }
@@ -388,83 +350,18 @@ padding: 0.6rem;
 {
   margin: 0 0.75rem 0.25rem 0.75rem;
 }
-@media (min-width: 1024px)
-{
-.hébèrgements-ville-marseille
-{
-  display: flex;
-  align-items: space-between;
-}
-}
-@media (max-width: 1024px)
-{
-.hébèrgements-populaire-marseille
-{
-  grid-template-columns: 1fr;
-  grid-template-rows: auto repeat(3, 9rem);
-  margin-top: 2.5rem;
-}
-}
-@media (min-width: 1024px)
-{
-.hébèrgements-populaire-marseille
-{
-  grid-template-columns: 1fr;
-  grid-template-rows: auto repeat(3, 9rem);
-  margin-left: 2.5rem;
-}
-.titre-hébèrgements-populaires
-{
-  grid-column: 1/-1;
-}
-}
-.titre-hébèrgements-populaires
-{
-  grid-column: 1/-1;
-}
- @media (max-width: 650px)
-{
-.hébèrgements-principaux-ville-marseille 
-{
-  grid-template-columns: 1fr;
-}
-}
-@media (max-width: 930px) and (min-width: 651px)
-{
-.hébèrgements-principaux-ville-marseille 
-{ 
-  grid-template-columns: 1fr 1fr;
-}
-}
-@media (min-width: 931px)
-{
-.hébèrgements-principaux-ville-marseille 
-{
-  grid-template-columns: repeat(3, 1fr);
-}
-}
-
-.hébèrgements-principals-montrer-plus
-{
-  font-weight: bold;
-  padding-left: 0.6rem;
-}
 .les-activités-ville-marseille
 {
   display: grid;
+  row-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 12rem 2rem 2rem 2rem 12rem;
   column-gap: 2rem;
   margin: 4rem 0 4rem 0;
 }
 .titre-activités-marseille
 {
   grid-column: 1/-1;
-}
-.image-contenu-carte-activités
-{
-  position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 .carteactivités
 {
@@ -473,50 +370,6 @@ padding: 0.6rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-}
-.contenu-carte-activités
-{
-  position: relative;
-  flex: 1;
-}
-.titre-carte-activités
-{
-  margin: 1.2rem 1.5rem 1.2rem 1.5rem;
-}
-@media (max-width: 650px)
-{
-.les-activités-ville-marseille
-{
-  row-gap: 2rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
-}
-}
-@media (min-width: 651px) and (max-width: 930px)
-{
-.les-activités-ville-marseille
-{
-  row-gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto 12rem 12rem 12rem;
-}
-}
-@media (min-width: 931px) and (max-width: 1124px)
-{
-.les-activités-ville-marseille
-{
-  row-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 12rem 12rem;
-}
-}
-@media (min-width: 1124px)
-{
-.les-activités-ville-marseille
-{
-  row-gap: 2rem;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 12rem 2rem 2rem 2rem 12rem;
 }
 .carteactivités1 
 {
@@ -548,6 +401,21 @@ padding: 0.6rem;
   grid-column: 4/5;
   grid-row: 4/7;
 }
+.contenu-carte-activités
+{
+  position: relative;
+  flex: 1;
+}
+.image-contenu-carte-activités
+{
+  position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.titre-carte-activités
+{
+  margin: 1.2rem 1.5rem 1.2rem 1.5rem;
 }
 .pied-de-page
 {
@@ -571,34 +439,4 @@ padding: 0.6rem;
 {
   display: flex;
   margin: 1rem 0 1rem 0rem;
-}
-@media (max-width: 720px) 
-{
-.contenu-pied-de-page 
-{
-  flex-direction: column;
-  padding: 2rem;
-}
-.colonne-contenu-pied-de-page 
-{
-  width: 100%;
-  padding: 0;
-  margin: 1rem 0;
-}
-.colonne-contenu-pied-de-page:first-child 
-{
-  margin-top: 0;
-}
-.colonne-contenu-pied-de-page:last-child 
-{
-  margin-bottom: 0;
-}
-.titre-colonne-contenu-pied-de-page 
-{
-  margin: 0;
-}
-.rubrique-colonne-contenu-pied-de-page 
-{
-  margin-bottom: 0;
-}
 }
