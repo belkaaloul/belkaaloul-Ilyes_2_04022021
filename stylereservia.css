@@ -3,7 +3,6 @@ body {
   font-family: "Raleway", "Sans serif";
   margin: 0;
 }
-
 header
 {
   display: flex;
@@ -11,17 +10,15 @@ header
   align-items: center;
   padding: 0 2rem;
 }
-
 #titre-logo
 {
   display: flex;
 }
-
 #titre-logo img
 {
   height: 50px;
+  padding: 1rem 0;
 }
-
 #titre-logo nav
 {
   display: flex;
@@ -38,7 +35,6 @@ header
 {
   padding: 1rem 6rem 0 3rem;
 }
-
 .lien-nav:hover 
 {
   color: #0065FC;
@@ -56,68 +52,56 @@ header
 {
   border-top: none;
 }
-}
-
 .nav-inscription
 {
   padding: 1rem 2rem 0 3rem;
 }
-
 a
 {
   text-decoration: none;
-  color: black;
-  
+  color: black; 
 }
-
 .nav-inscription:hover 
 {
   color: #0065FC;
   border-top: 3px solid #0065FC;
 }
-
-
 a:hover
 {
   color: #0065FC;
 }
-
 main
 {
   max-width: 1400px;
   margin: auto;
   padding: 0 2rem;
 }
-
 h1
 {
   font-size: 1.8em;
   margin: 0.7em 0 0.4em 0;
 }
-
 .sous-titre-en-tete
 {
   margin-top: 0;
   font-size: 1.1rem;
 }
-
 .recherche-form
 {
   display: inline-flex;
   max-width: 100%;
   overflow: auto;
-
 }
 .recherche-form-input-envoyer
 {
-    background-color: #0065FC;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding: 0 1.5rem 0 1.5rem;
-    font-size: 1rem;
-    
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem 0 1.5rem;
+  font-size: 1rem;
+  
 }
 .recherche-form-input
 {
@@ -140,25 +124,23 @@ h1
   padding: 1.1rem;
   color: #0065fc;
 }
-
 .titre-filtres-recherche
 {
-display: flex;
-align-items: center;
-font-size: 1.5rem;
-font-weight: bold;
-padding: 0 2rem 1rem 0;
-margin-top: 0;
-font-size: 1.6em;
-height: 55px;
-width: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 2rem 1rem 0;
+  margin-top: 0;
+  font-size: 1.6em;
+  height: 55px;
+  width: 80px;
 }
 .filtres-recherche
 {
-display: flex;
-margin-top: 1.7rem;
-flex-wrap: wrap;
-
+  display: flex;
+  margin-top: 1.7rem;
+  flex-wrap: wrap;
 }
 .filtres-recherche-cat
 {
@@ -176,7 +158,6 @@ flex-wrap: wrap;
 {
   background-color: #f3f8fffc;
 }
-
 .titre-filtres-recherche-cat
 {
   display: flex;
@@ -188,7 +169,6 @@ flex-wrap: wrap;
   margin: 0 1rem;
   margin: 0 0.7rem;
 }
-
 .filtres-recherche-icon
 {
   background-color: #DEEBFF;
@@ -196,8 +176,7 @@ flex-wrap: wrap;
   min-height: 3.5rem;
   min-width: 3.5rem;
   display: flex;
-  justify-content: center;
- 
+  justify-content: center; 
 }
 .icone-loupe
 {
@@ -211,7 +190,6 @@ flex-wrap: wrap;
   font-size: 1rem;
   cursor: pointer;
 }
-
 @media screen and (max-width: 600px) {
   .recherche-form {
   display: flex;
@@ -238,19 +216,18 @@ flex-wrap: wrap;
 @media screen and (min-width: 601px) {
   .texte-rechercher {
     display: block;
-  }
-  .icone-loupe   {
-
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 0 1rem 1rem 0;
-      font-family: "Raleway", "Sans serif";
-      font-size: 1rem;
-      cursor: pointer;
-      display: none !important;
-  }
-  
+}
+.icone-loupe   
+{
+color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+  display: none !important;
+}
 }
 .nombre-resultat-recherche
 {
@@ -437,15 +414,14 @@ padding: 0.6rem;
   margin-left: 2.5rem;
 }
 .titre-hébèrgements-populaires
- {
+{
   grid-column: 1/-1;
- }
 }
-
+}
 .titre-hébèrgements-populaires
- {
+{
   grid-column: 1/-1;
- }
+}
  @media (max-width: 650px)
 {
 .hébèrgements-principaux-ville-marseille 
@@ -521,18 +497,17 @@ padding: 0.6rem;
 .les-activités-ville-marseille
 {
   row-gap: 2rem;
-  grid-template-columns: repeat(2, 1fr;
-  grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 12rem 12rem 12rem;
 }
 }
-
 @media (min-width: 931px) and (max-width: 1124px)
 {
 .les-activités-ville-marseille
 {
   row-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr;
-  grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 12rem 12rem;
 }
 }
 @media (min-width: 1124px)
@@ -540,7 +515,90 @@ padding: 0.6rem;
 .les-activités-ville-marseille
 {
   row-gap: 2rem;
-  grid-template-columns: repeat(4, 1fr;
-  grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 12rem 2rem 2rem 2rem 12rem;
+}
+.carteactivités1 
+{
+  grid-row: 2/7;
+  grid-column: 1/2;
+}
+.carteactivités2 
+{
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.carteactivités3
+{
+  grid-column: 3/4;
+  grid-row: 2/7;
+}
+.carteactivités4
+{
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.carteactivités5
+{
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.carteactivités6
+{
+  grid-column: 4/5;
+  grid-row: 4/7;
+}
+}
+.pied-de-page
+{
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.contenu-pied-de-page
+{
+  display: flex;
+  width: 1400px;
+  max-width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.colonne-contenu-pied-de-page
+{
+  width: 32%;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.rubrique-colonne-contenu-pied-de-page
+{
+  display: flex;
+  margin: 1rem 0 1rem 0rem;
+}
+@media (max-width: 720px) 
+{
+.contenu-pied-de-page 
+{
+  flex-direction: column;
+  padding: 2rem;
+}
+.colonne-contenu-pied-de-page 
+{
+  width: 100%;
+  padding: 0;
+  margin: 1rem 0;
+}
+.colonne-contenu-pied-de-page:first-child 
+{
+  margin-top: 0;
+}
+.colonne-contenu-pied-de-page:last-child 
+{
+  margin-bottom: 0;
+}
+.titre-colonne-contenu-pied-de-page 
+{
+  margin: 0;
+}
+.rubrique-colonne-contenu-pied-de-page 
+{
+  margin-bottom: 0;
 }
 }
