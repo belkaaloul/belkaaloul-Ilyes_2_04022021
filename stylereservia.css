@@ -200,12 +200,11 @@ h1
   margin-right: 12px;
 }
 
-.hébèrgements-ville-marseille
+.hebergements-ville-marseille
 {
   display: flex;
-  align-items: space-between;
 }
-.hébèrgements-principaux-ville-marseille
+.hebergements-principaux-ville-marseille
 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -213,15 +212,15 @@ h1
   row-gap: 2rem;
   background-color: #F2F2F2;
   border-radius: 1.4rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
 }
-.hébèrgements-principal-titre
+.hebergements-principal-titre
 {
   margin: 0;
-  padding: 0.6rem;
+  padding: 0 0.6rem 0.6rem 0.6rem;
   grid-column: 1/-1;
 }
-.carte-hébèrgement-principal
+.carte-hebergement-principal
 {
   background-color: white;
   padding: 0.375rem;
@@ -231,11 +230,11 @@ h1
   box-sizing: border-box;
   height: 100%;
 }
-.figure-carte-hébèrgement-principal
+.figure-carte-hebergement-principal
 {
   margin: 0;
 }
-.figure-carte-hébèrgement-principal-photo
+.figure-carte-hebergement-principal-photo
 {
   height: 7.5rem;
   object-fit: cover;
@@ -244,61 +243,70 @@ h1
   max-height: 100%;
   border-radius: 1rem 1rem 0 0;
 }
-.titre-figcaption-carte-hébèrgement-principal
+.titre-figcaption-carte-hebergement-principal
 {
   margin: 0.25rem 0 0 1rem;
 }
-.carte-hébèrgement-principal-description
+.carte-hebergement-principal-description
 {
   margin: 0.25rem 0 0 1rem;
 }
-.carte-hébèrgement-principal-note-générale
+.carte-hebergement-principal-note-generale
 {
-  margin: 0.25rem 0 0 1rem;
+  margin: 1rem 0 0.75rem 1rem;
 }
-.carte-hébèrgement-principal-note[data-active=true]
+.carte-hebergement-principal-note[data-active=true]
 {
   color: #0065FC;
   padding: 0;
 }
-.carte-hébèrgement-principal-note[data-active=false]
+.carte-hebergement-principal-note[data-active=false]
 {
   color: #d9d9d9d1;
   padding: 0;
 }
-.hébèrgements-principals-montrer-plus
+.hebergements-principals-montrer-plus
 {
+  font-size: 1.2rem;
   font-weight: bold;
   padding-left: 0.6rem;
 }
-.hébèrgements-populaire-marseille
+.hebergements-populaire-marseille
 {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto repeat(3, 9rem);
-  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   row-gap: 2rem;
-  column-gap: 2rem;
-  align-items: start;
+  margin-left: 2.5rem;
   background-color: #F2F2F2;
   border-radius: 1.4rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem 2rem 2rem;
   min-width: 28%;
 }
-.titre-hébèrgements-populaires
+.en-tete-titre-hebergements-populaires
+{
+  display: grid;
+  grid-template-columns: 1fr 1.25rem;
+  margin-bottom: 1rem;
+}
+.titre-hebergements-populaires
 {
   grid-column: 1/-1;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  margin: 0;
 }
 .icone-logo-populaire
 {
   padding: 0;
   color: black;
 }
-.carte-hébèrgement-populaire
+.carte-hebergement-populaire
 {
+  display: flex;
   background-color: white;
+  margin: 0;
   padding: 0.375rem;
   border-radius: 1.25rem;
   box-shadow: 0 0 16px #0000002e;
@@ -306,22 +314,21 @@ h1
   box-sizing: border-box;
   height: 100%;
 }
-.contenu-hébèrgement-populaire
+.contenu-hebergement-populaire
 {
-  display: flex;
-  align-items: stretch;
+  display: block;
   height: 100%;
   overflow: auto;
 }
-.figure-carte-hébèrgement-populaire
+.figure-carte-hebergement-populaire
 {
   position: relative;
   min-height: 100%;
-  width: 33.33%;
-  min-width: 33.33%;
-  max-width: 33.33%;
+  width: 35%;
+  min-width: 35%;
+  max-width: 35%;
 }
-.figure-carte-hébèrgement-populaire-photo
+.figure-carte-hebergement-populaire-photo
 {
   position: absolute;
   object-fit: cover;
@@ -329,28 +336,28 @@ h1
   height: 100%;
   border-radius: 1rem 0 0 1rem;
 }
-.figcaption-carte-hébèrgement-populaire
+.figcaption-carte-hebergement-populaire
 {
   display: flex;
   flex-direction: column;
 }
-.titre-figcaption-carte-hébèrgement-populaire
+.titre-figcaption-carte-hebergement-populaire
 {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
-.carte-hébèrgement-populaire-description
+.carte-hebergement-populaire-description
 {
   margin: 0.25rem 0.75rem 0 0.75rem;
 }
-.séparateur-titre-note
+.separateur-titre-note
 {
   flex: 1;
 }
-.carte-hébèrgement-populaire-note-générale
+.carte-hebergement-populaire-note-generale
 {
-  margin: 0 0.75rem 0.25rem 0.75rem;
+  margin: 0 0.75rem 1rem 0.75rem;
 }
-.les-activités-ville-marseille
+.les-activites-ville-marseille
 {
   display: grid;
   row-gap: 2rem;
@@ -359,11 +366,11 @@ h1
   column-gap: 2rem;
   margin: 4rem 0 4rem 0;
 }
-.titre-activités-marseille
+.titre-activites-marseille
 {
   grid-column: 1/-1;
 }
-.carteactivités
+.carteactivites
 {
   box-shadow: 0 0 20px #0000002e;
   border-radius: 1rem;
@@ -371,49 +378,49 @@ h1
   display: flex;
   flex-direction: column;
 }
-.carteactivités1 
+.carteactivites1 
 {
   grid-row: 2/7;
   grid-column: 1/2;
 }
-.carteactivités2 
+.carteactivites2 
 {
   grid-column: 2/3;
   grid-row: 2/5;
 }
-.carteactivités3
+.carteactivites3
 {
   grid-column: 3/4;
   grid-row: 2/7;
 }
-.carteactivités4
+.carteactivites4
 {
   grid-column: 4/5;
   grid-row: 2/3;
 }
-.carteactivités5
+.carteactivites5
 {
   grid-column: 2/3;
   grid-row: 6/7;
 }
-.carteactivités6
+.carteactivites6
 {
   grid-column: 4/5;
   grid-row: 4/7;
 }
-.contenu-carte-activités
+.contenu-carte-activites
 {
   position: relative;
   flex: 1;
 }
-.image-contenu-carte-activités
+.image-contenu-carte-activites
 {
   position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.titre-carte-activités
+.titre-carte-activites
 {
   margin: 1.2rem 1.5rem 1.2rem 1.5rem;
 }
