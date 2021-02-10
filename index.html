@@ -21,11 +21,11 @@
 		</header>
 		<!--en-tete-->
 		<!--contenu de page-->
-		<main class="contenu de page">
+		<main class="contenu-de-page">
 			<!--section-recherches-->
 			<section class="recherche-choix">
 				<div class="recherche-titre">
-					<h1 class="titre d'en-tete">Trouver votre hébergement pour des vacances de rêve</h1>
+					<h1 class="titre-en-tete">Trouver votre hébergement pour des vacances de rêve</h1>
 					<p class="sous-titre-en-tete">
 						En plein centre ville ou en pleine nature
 					</p>
@@ -34,36 +34,41 @@
 					<span class="recherche-form-icone"><i class="fas fa-map-marker-alt"></i></span>
 					<input class="recherche-form-input" type="search" placeholder="Marseille, France" size="1">
 					<button class="recherche-form-input-envoyer">
-						<span class="texte-rechercher">Rechercher</span>
-						<i class="icone-loupe fas fa-search"></i>
+						<span class="recherche-form-input-envoyertext">Rechercher</span>
+						<i class="recherche-form-input-envoyericone fas fa-search" aria-hidden="true"></i>
 					</button>
 				</form>
 				<div class="filtres-recherche">
-					<h2 class="titre-filtres-recherche">Filtres</h2>
-					<div class="filtres-recherche-cat">
-						<div class="filtres-recherche-icon">
-							<i class="fas fa-money-bill-wave"></i>
-						</div>
-						<span class="titre-filtres-recherche-cat">Économique</span>
+					<div class="filtres-recherche-en-tete-titre">
+						<h2 class="titre-filtres-recherche">Filtres</h2>
 					</div>
-					<div class="filtres-recherche-cat">
-						<div class="filtres-recherche-icon">
-							<i class="fas fa-child"></i>
+					<div class="contenu-filtres-recherche-cat">
+						<div class="filtres-recherche-cat">
+							<div class="filtres-recherche-icon">
+								<i class="fas fa-money-bill-wave"></i>
+							</div>
+							<span class="titre-filtres-recherche-cat">Économique</span>
 						</div>
-						<span class="titre-filtres-recherche-cat">Familial</span>
-					</div>
-					<div class="filtres-recherche-cat">
-						<div class="filtres-recherche-icon">
-							<i class="fas fa-heart"></i>
+						<div class="filtres-recherche-cat">
+							<div class="filtres-recherche-icon">
+								<i class="fas fa-child"></i>
+							</div>
+							<span class="titre-filtres-recherche-cat">Familial</span>
 						</div>
-						<span class="titre-filtres-recherche-cat">Romantique</span>
-					</div>
-					<div class="filtres-recherche-cat">
-						<div class="filtres-recherche-icon">
-							<i class="fas fa-dog"></i>
+						<div class="filtres-recherche-cat">
+							<div class="filtres-recherche-icon">
+								<i class="fas fa-heart"></i>
+							</div>
+							<span class="titre-filtres-recherche-cat">Romantique</span>
 						</div>
-						<span class="titre-filtres-recherche-cat">Animaux autorisés</span>
+						<div class="filtres-recherche-cat">
+							<div class="filtres-recherche-icon">
+								<i class="fas fa-dog"></i>
+							</div>
+							<span class="titre-filtres-recherche-cat">Animaux autorisés</span>
+						</div>
 					</div>
+
 				</div>
 				<div class="nombre-resultat-recherche">
 					<div class="resultat-recherche-icone">
@@ -77,186 +82,188 @@
 				<!--section-hebergements-->
 			</section>
 			<section class="hebergements-ville-marseille" id="hebergements-ville-marseille">
-				<div class="hebergements-principaux-ville-marseille">
-					<h2 class="hebergements-principal-titre">Hébergements à Marseille</h2>
-					<article class="carte-hebergement-principal">
-						<a href="#">
-							<figure class="figure-carte-hebergement-principal">
-								<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/marcus-loke-WQJvWU_HZFo-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
-								<figcaption class="figcaption-carte-hebergement-principal">
-									<h3 class="titre-figcaption-carte-hebergement-principal">Auberge la cannebière</h3>
-									<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hébergement-principl-prix">25€</strong></p>
-									<div class="carte-hebergement-principal-note-generale">
+				<div class="hebergements-section">
+					<div class="hebergements-principaux-ville-marseille">
+						<h2 class="hebergements-principal-titre">Hébergements à Marseille</h2>
+						<article class="carte-hebergement-principal">
+							<a href="#">
+								<figure class="figure-carte-hebergement-principal">
+									<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/marcus-loke-WQJvWU_HZFo-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
+									<figcaption class="figcaption-carte-hebergement-principal">
+										<h3 class="titre-figcaption-carte-hebergement-principal">Auberge la cannebière</h3>
+										<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hébergement-principl-prix">25€</strong></p>
+										<div class="carte-hebergement-principal-note-generale">
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
+										</div>
+									</figcaption>
+								</figure>
+							</a>
+						</article>
+						<article class="carte-hebergement-principal">
+							<a href="#">
+								<figure class="figure-carte-hebergement-principal">
+									<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/fred-kleber-gTbaxaVLvsg-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
+									<figcaption class="figcaption-carte-hebergement-principal">
+										<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel du port</h3>
+										<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hébergement-principl-prix">52€</strong></p>
+										<div class="carte-hebergement-principal-note-generale">
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+										</div>
+									</figcaption>
+								</figure>
+							</a>
+						</article>
+						<article class="carte-hebergement-principal">
+							<a href="#">
+								<figure class="figure-carte-hebergement-principal">
+									<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/reisetopia-B8WIgxA_PFU-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
+									<figcaption class="figcaption-carte-hebergement-principal">
+										<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel les mouettes</h3>
+										<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">76€</strong></p>
+										<div class="carte-hebergement-principal-note-generale">
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+										</div>
+									</figcaption>
+								</figure>
+							</a>
+						</article>
+						<article class="carte-hebergement-principal">
+							<a href="#">
+								<figure class="figure-carte-hebergement-principal">
+									<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/annie-spratt-Eg1qcIitAuA-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
+									<figcaption class="figcaption-carte-hebergement-principal">
+										<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel de la mer</h3>
+										<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">46€</strong></p>
+										<div class="carte-hebergement-principal-note-generale">
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
+										</div>
+									</figcaption>
+								</figure>
+							</a>
+						</article>
+						<article class="carte-hebergement-principal">
+							<a href="#">
+								<figure class="figure-carte-hebergement-principal">
+									<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/nicate-lee-kT-ZyaiwBe0-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
+									<figcaption class="figcaption-carte-hebergement-principal">
+										<h3 class="titre-figcaption-carte-hebergement-principal">Auberge le panier</h3>
+										<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">23€</strong></p>
+										<div class="carte-hebergement-principal-note-generale">
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
+										</div>
+									</figcaption>
+								</figure>
+							</a>
+						</article>
+						<article class="carte-hebergement-principal">
+							<a href="#">
+								<figure class="figure-carte-hebergement-principal">
+									<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/nicate-lee-kT-ZyaiwBe0-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
+									<figcaption class="figcaption-carte-hebergement-principal">
+										<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel chez Amina</h3>
+										<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">96€</strong></p>
+										<div class="carte-hebergement-principal-note-generale">
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+											<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+										</div>
+									</figcaption>
+								</figure>
+							</a>
+						</article>
+						<a class="hebergements-principals-montrer-plus" href="#">Afficher plus</a>
+					</div>
+					<aside class="hebergements-populaire-marseille">
+						<div class="en-tete-titre-hebergements-populaires">
+							<h2 class="titre-hebergements-populaires">Les plus populaires<i class="fas fa-chart-line icone-logo-populaire"></i></h2>
+						</div>
+						<div class="contenu-hebergement-populaire">
+							<a href="#">
+								<figure class="carte-hebergement-populaire">
+									<div class="figure-carte-hebergement-populaire">
+										<img class="figure-carte-hebergement-populaire-photo" src="images/mini-photo-hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash-mini.jpg" alt="photo de la chambre d'hebergement" />
+									</div>
+									<figcaption class="figcaption-carte-hebergement-populaire">
+									<h3 class="titre-figcaption-carte-hebergement-populaire">Hôtel le soleil du matin</h3>
+									<p class="carte-hebergement-populaire-description">Nuit à partir de <strong class="carte-hebergement-populaire-prix">128€</strong></p>
+									<div class="separateur-titre-note"></div>
+									<div class="carte-hebergement-populaire-note-generale">
+										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+									</div>
+									</figcaption>
+								</figure>
+							</a>
+						</div>	
+						<div class="contenu-hebergement-populaire">
+							<a href="#">
+								<figure class="carte-hebergement-populaire">
+									<div class="figure-carte-hebergement-populaire">
+										<img class="figure-carte-hebergement-populaire-photo" src="images/mini-photo-hebergement/aw-creative-VGs8z60yT2c-unsplash-mini.jpg" alt="photo de la chambre d'hebergement" />
+									</div>
+									<figcaption class="figcaption-carte-hebergement-populaire">
+									<h3 class="titre-figcaption-carte-hebergement-populaire">Chambres d'hôtes</h3>
+									<p class="carte-hebergement-populaire-description">Nuit à partir de <strong class="carte-hebergement-populaire-prix">71€</strong></p>
+									<div class="separateur-titre-note"></div>
+									<div class="carte-hebergement-populaire-note-generale">
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
 									</div>
-								</figcaption>
-							</figure>
-						</a>
-					</article>
-					<article class="carte-hebergement-principal">
-						<a href="#">
-							<figure class="figure-carte-hebergement-principal">
-								<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/fred-kleber-gTbaxaVLvsg-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
-								<figcaption class="figcaption-carte-hebergement-principal">
-									<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel du port</h3>
-									<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hébergement-principl-prix">52€</strong></p>
-									<div class="carte-hebergement-principal-note-generale">
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+						<div class="contenu-hebergement-populaire">
+							<a href="#">
+								<figure class="carte-hebergement-populaire">
+									<div class="figure-carte-hebergement-populaire">
+										<img class="figure-carte-hebergement-populaire-photo" src="images/mini-photo-hebergement/febrian-zakaria-sjvU0THccQA-unsplash-mini.jpg" alt="photo de la chambre d'hebergement" />
 									</div>
-								</figcaption>
-							</figure>
-						</a>
-					</article>
-					<article class="carte-hebergement-principal">
-						<a href="#">
-							<figure class="figure-carte-hebergement-principal">
-								<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/reisetopia-B8WIgxA_PFU-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
-								<figcaption class="figcaption-carte-hebergement-principal">
-									<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel les mouettes</h3>
-									<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">76€</strong></p>
-									<div class="carte-hebergement-principal-note-generale">
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									</div>
-								</figcaption>
-							</figure>
-						</a>
-					</article>
-					<article class="carte-hebergement-principal">
-						<a href="#">
-							<figure class="figure-carte-hebergement-principal">
-								<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/annie-spratt-Eg1qcIitAuA-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
-								<figcaption class="figcaption-carte-hebergement-principal">
-									<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel de la mer</h3>
-									<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">46€</strong></p>
-									<div class="carte-hebergement-principal-note-generale">
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
-									</div>
-								</figcaption>
-							</figure>
-						</a>
-					</article>
-					<article class="carte-hebergement-principal">
-						<a href="#">
-							<figure class="figure-carte-hebergement-principal">
-								<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/nicate-lee-kT-ZyaiwBe0-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
-								<figcaption class="figcaption-carte-hebergement-principal">
-									<h3 class="titre-figcaption-carte-hebergement-principal">Auberge le panier</h3>
-									<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">23€</strong></p>
-									<div class="carte-hebergement-principal-note-generale">
+									<figcaption class="figcaption-carte-hebergement-populaire">
+									<h3 class="titre-figcaption-carte-hebergement-populaire">Hôtel tout bleu et blanc</h3>
+									<p class="carte-hebergement-populaire-description">Nuit à partir de <strong class="carte-hebergement-populaire-prix">68€</strong></p>
+									<div class="separateur-titre-note"></div>
+									<div class="carte-hebergement-populaire-note-generale">
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
 										<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
 									</div>
-								</figcaption>
-							</figure>
-						</a>
-					</article>
-					<article class="carte-hebergement-principal">
-						<a href="#">
-							<figure class="figure-carte-hebergement-principal">
-								<img class="figure-carte-hebergement-principal-photo" src="images/mini-photo-hebergement/nicate-lee-kT-ZyaiwBe0-unsplash-mini.jpg" alt="photo de la chambre d'hebergement">
-								<figcaption class="figcaption-carte-hebergement-principal">
-									<h3 class="titre-figcaption-carte-hebergement-principal">Hôtel chez Amina</h3>
-									<p class="carte-hebergement-principal-description">Nuit à partir de <strong class="carte-hebergement-principl-prix">96€</strong></p>
-									<div class="carte-hebergement-principal-note-generale">
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-										<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									</div>
-								</figcaption>
-							</figure>
-						</a>
-					</article>
-					<a class="hebergements-principals-montrer-plus" href="#">Afficher plus</a>
+									</figcaption>
+								</figure>
+							</a>
+						</div>
+					</aside>
 				</div>
-				<aside class="hebergements-populaire-marseille">
-					<div class="en-tete-titre-hebergements-populaires">
-						<h2 class="titre-hebergements-populaires">Les plus populaires<i class="fas fa-chart-line icone-logo-populaire"></i></h2>
-					</div>
-					<div class="contenu-hebergement-populaire">
-						<a href="#">
-							<figure class="carte-hebergement-populaire">
-								<div class="figure-carte-hebergement-populaire">
-									<img class="figure-carte-hebergement-populaire-photo" src="images/mini-photo-hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash-mini.jpg" alt="photo de la chambre d'hebergement" />
-								</div>
-								<figcaption class="figcaption-carte-hebergement-populaire">
-								<h3 class="titre-figcaption-carte-hebergement-populaire">Hôtel le soleil du matin</h3>
-								<p class="carte-hebergement-populaire-description">Nuit à partir de <strong class="carte-hebergement-populaire-prix">128€</strong></p>
-								<div class="separateur-titre-note"></div>
-								<div class="carte-hebergement-populaire-note-generale">
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-								</div>
-								</figcaption>
-							</figure>
-						</a>
-					</div>	
-					<div class="contenu-hebergement-populaire">
-						<a href="#">
-							<figure class="carte-hebergement-populaire">
-								<div class="figure-carte-hebergement-populaire">
-									<img class="figure-carte-hebergement-populaire-photo" src="images/mini-photo-hebergement/aw-creative-VGs8z60yT2c-unsplash-mini.jpg" alt="photo de la chambre d'hebergement" />
-								</div>
-								<figcaption class="figcaption-carte-hebergement-populaire">
-								<h3 class="titre-figcaption-carte-hebergement-populaire">Chambres d'hôtes</h3>
-								<p class="carte-hebergement-populaire-description">Nuit à partir de <strong class="carte-hebergement-populaire-prix">71€</strong></p>
-								<div class="separateur-titre-note"></div>
-								<div class="carte-hebergement-populaire-note-generale">
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
-								</div>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-					<div class="contenu-hebergement-populaire">
-						<a href="#">
-							<figure class="carte-hebergement-populaire">
-								<div class="figure-carte-hebergement-populaire">
-									<img class="figure-carte-hebergement-populaire-photo" src="images/mini-photo-hebergement/febrian-zakaria-sjvU0THccQA-unsplash-mini.jpg" alt="photo de la chambre d'hebergement" />
-								</div>
-								<figcaption class="figcaption-carte-hebergement-populaire">
-								<h3 class="titre-figcaption-carte-hebergement-populaire">Hôtel tout bleu et blanc</h3>
-								<p class="carte-hebergement-populaire-description">Nuit à partir de <strong class="carte-hebergement-populaire-prix">68€</strong></p>
-								<div class="separateur-titre-note"></div>
-								<div class="carte-hebergement-populaire-note-generale">
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="true"></i>
-									<i class="fas fa-star carte-hebergement-principal-note" data-active="false"></i>
-								</div>
-								</figcaption>
-							</figure>
-						</a>
-					</div>
-				</aside>
 			</section>
 			<!--section-hebergements-->
 			<!--section-activites-->
