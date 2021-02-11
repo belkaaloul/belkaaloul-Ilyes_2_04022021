@@ -192,11 +192,11 @@ h1
 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 0.75rem;
+  column-gap: 2rem;
   row-gap: 1.5rem;
   background-color: #F2F2F2;
   border-radius: 1.4rem;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .hebergements-principal-titre
 {
@@ -316,9 +316,9 @@ h1
 {
   position: relative;
   min-height: 100%;
-  width: 50%;
-  min-width: 50%;
-  max-width: 50%;
+  width: 35%;
+  min-width: 35%;
+  max-width: 35%;
 }
 .figure-carte-hebergement-populaire-photo
 {
@@ -347,7 +347,7 @@ h1
 }
 .carte-hebergement-populaire-note-generale
 {
-  margin: 3rem 0.75rem 0.5rem 0.75rem;
+  margin: 3.5rem 0.75rem 0.5rem 0.75rem;
 }
 .les-activites-ville-marseille
 {
@@ -421,6 +421,10 @@ a
 
 @media screen and (max-width: 500px)
 {
+.hebergements-section
+{
+  padding: 0 1.25rem;
+}
 .hebergements-populaire-marseille
 {
   padding: 0.5rem;
@@ -430,6 +434,11 @@ a
   grid-template-columns: 1fr;
   background-color: white;
   padding: 0;
+  row-gap: 2rem;
+}
+.figure-carte-hebergement-principal-photo 
+{
+  height: 6rem;
 }
 .les-activites-ville-marseille
 {
@@ -641,8 +650,16 @@ body
 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 14px;
   color: black;
+}
+h1
+{
+  font-size: 1.6rem;
+}
+.sous-titre-en-tete
+{
+  font-size: 16px;
 }
 .contenu-filtres-recherche-cat 
 {
@@ -663,6 +680,17 @@ body
 }
 @media screen and (min-width: 501px) and (max-width: 1023px)
 {
+.hebergements-principaux-ville-marseille 
+{
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.carte-hebergement-principal-note-generale 
+{
+  margin: 1rem 0 0 0.75rem
+}
 .titre-carte-activites
 {
   margin: 0.5rem;
@@ -674,7 +702,6 @@ body
   row-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto 12rem 12rem;
-}
 }
 
 @media screen and (max-width: 1230px)
@@ -706,7 +733,4 @@ body
   margin-bottom: 2.5rem;
 }
 }
-
-
-
-
+}
