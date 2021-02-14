@@ -418,22 +418,45 @@ a
   color: black;
 }
 
+@media screen and (max-width: 375px)
+{
+.hebergements-populaire-marseille 
+{
+  padding: 1rem;
+}
+.hebergements-principaux-ville-marseille  
+{
+  padding: 1rem;
+}
+.les-activites-ville-marseille
+{
+  margin: 2rem 1.5rem;
+}
+}
+
+@media screen and (min-width: 376px) and (max-width: 500px)
+{
+.hebergements-populaire-marseille
+{
+  padding: 2rem;
+}
+
+.les-activites-ville-marseille
+{
+  margin: 2rem 2.2rem 2rem 2.2rem;
+}
+}
 
 @media screen and (max-width: 500px)
 {
-.hebergements-section
+.contenu-de-page
 {
-  padding: 0 1.25rem;
-}
-.hebergements-populaire-marseille
-{
-  padding: 0.5rem;
+  padding: 0;
 }
 .hebergements-principaux-ville-marseille 
 {
   grid-template-columns: 1fr;
   background-color: white;
-  padding: 0;
   row-gap: 2rem;
 }
 .figure-carte-hebergement-principal-photo 
@@ -677,6 +700,16 @@ h1
 {
   font-size: 1.2rem;
 }
+.hebergements-section
+{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.hebergements-populaire-marseille
+{
+  margin-left: 0;
+  margin-bottom: 2.5rem;
+}
 }
 @media screen and (min-width: 501px) and (max-width: 1023px)
 {
@@ -721,16 +754,6 @@ h1
 .titre-filtres-recherche
 {
   font-size: 1.2rem;
-}
-.hebergements-section
-{
-  display: flex;
-  flex-direction: column-reverse;
-}
-.hebergements-populaire-marseille
-{
-  margin-left: 0;
-  margin-bottom: 2.5rem;
 }
 }
 }
